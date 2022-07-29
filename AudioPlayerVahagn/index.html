@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AudioPlayer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <script src="script.js"></script>
+
+    <div class="main" id="main"></div>
+    <div class="player">
+        <div class="row1" id="row1"></div>
+        <div id="songTitle">Title</div>
+        <div class="row2">
+            <div class="play">
+                <img src="images/previous2.png" id="pre" onclick="pre()">
+                <img src="images/play-button1.png" id="play" onclick="playOrPauseSong()">
+                <img src="images/next2.png" id="next" onclick="next()">
+            </div>
+            <div class="seek-bar">
+                <div class="handle">
+                    <div id="fill">
+
+                    </div>
+                </div>
+            </div>
+            <div class="mute">
+                <div id="currentTime">00:00 / 00:00</div>
+                <div class="muteButtons">
+                    <img src="images/volume-down1.png" id="decrease" onclick="decrease()">
+                    <img src="images/volume1.png" id="mute" onclick="mute()">
+                    <img src="images/increase-volume1.png" id="increase" onclick="increase()">
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
